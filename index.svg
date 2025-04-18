@@ -148,10 +148,14 @@
                         </div>
                         <div class="output">
                             > Initializing repositories...<br />
+                            > Compiling packages...<br />
+                            > Grabbing achievements...<br />
                             > Loading contributions...<br />
+                            > Hiding private repositories...<br />
                             > System ready!<br />
                             > Welcome to Nao's GitHub profile.<br /><br />
-                        </div><span class="cursor"></span>
+                            <span class="cursor"></span>
+                        </div>
                     </div>
                     <div class="glitch"></div>
                 </div>
