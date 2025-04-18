@@ -154,14 +154,14 @@
                         </div>
                         <div class="output">
                             <div class="output-line" style="animation-delay: 0s;">&gt; Initializing repositories...</div>
-                            <div class="output-line" style="animation-delay: 0.4s;">&gt; Compiling packages...</div>
-                            <div class="output-line" style="animation-delay: 0.8s;">&gt; Grabbing achievements...</div>
-                            <div class="output-line" style="animation-delay: 1.2s;">&gt; Loading contributions...</div>
-                            <div class="output-line" style="animation-delay: 1.6s;">&gt; System ready!</div>
+                            <div class="output-line" style="animation-delay: 1s;">&gt; Compiling packages...</div>
+                            <div class="output-line" style="animation-delay: 2s;">&gt; Grabbing achievements...</div>
+                            <div class="output-line" style="animation-delay: 3s;">&gt; Loading contributions...</div>
+                            <div class="output-line" style="animation-delay: 4s;">&gt; System ready!</div>
                             <br />
-                            <div class="output-line" style="animation-delay: 2s;">&gt; Welcome to Nao's GitHub profile.</div>
+                            <div class="output-line" style="animation-delay: 5s;">&gt; Welcome to Nao's GitHub profile.</div>
                             <br />
-                            <span class="cursor"></span>
+                            <div class="output-line" style="animation-delay: 6s;"><span class="cursor"></span></div>
                         </div>
                     </div>
                     <div class="glitch"></div>
