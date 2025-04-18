@@ -27,19 +27,6 @@
                     box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
                 }
 
-                .noise {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-image: url('noise.png');
-                    background-repeat: repeat;
-                    opacity: 0.1;
-                    pointer-events: none;
-                    z-index: 2;
-                }
-
                 .terminal-header {
                     position: absolute;
                     top: 0;
@@ -112,6 +99,20 @@
                     to {
                         opacity: 1;
                     }
+                }
+
+                .noise {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('noise.png');
+                    background-repeat: repeat;
+                    opacity: 0.1;
+                    pointer-events: none;
+                    z-index: 2;
+                    animation: glitch 0.3s infinite;
                 }
 
                 .glitch {
