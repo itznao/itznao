@@ -61,8 +61,6 @@
                     color: #00ff00;
                     border: none;
                     background: transparent;
-                    font-family: 'Courier New', monospace;
-                    font-size: 16px;
                     outline: none;
                     caret-color: #00ff00;
                 }
@@ -103,20 +101,6 @@
                     }
                 }
 
-                .noise {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-image: url('noise.png');
-                    background-repeat: repeat;
-                    opacity: 0.1;
-                    pointer-events: none;
-                    z-index: 10;
-                    animation: glitch 0.3s infinite;
-                }
-
                 .glitch {
                     position: absolute;
                     top: 0;
@@ -127,6 +111,11 @@
                     animation: glitch 0.3s infinite;
                     z-index: 30;
                     pointer-events: none;
+                }
+
+                .output-line {
+                    opacity: 0;
+                    animation: typeOut 1s forwards;
                 }
 
                 @keyframes glitch {
@@ -157,7 +146,6 @@
             </style>
             <div class="container">
                 <div class="terminal">
-                    <div class="noise"></div>
                     <div class="terminal-header"></div>
                     <div class="terminal-content">
                         <div class="command-line">
@@ -165,12 +153,14 @@
                             <span class="command">Hello World</span>
                         </div>
                         <div class="output">
-                            > Initializing repositories...<br />
-                            > Compiling packages...<br />
-                            > Grabbing achievements...<br />
-                            > Loading contributions...<br />
-                            > System ready!<br /><br />
-                            > Welcome to Nao's GitHub profile.<br /><br />
+                            <div class="output-line" style="animation-delay: 0s;">&gt; Initializing repositories...</div>
+                            <div class="output-line" style="animation-delay: 0.4s;">&gt; Compiling packages...</div>
+                            <div class="output-line" style="animation-delay: 0.8s;">&gt; Grabbing achievements...</div>
+                            <div class="output-line" style="animation-delay: 1.2s;">&gt; Loading contributions...</div>
+                            <div class="output-line" style="animation-delay: 1.6s;">&gt; System ready!</div>
+                            <br />
+                            <div class="output-line" style="animation-delay: 2s;">&gt; Welcome to Nao's GitHub profile.</div>
+                            <br />
                             <span class="cursor"></span>
                         </div>
                     </div>
