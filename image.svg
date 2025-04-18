@@ -27,6 +27,19 @@
                     box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
                 }
 
+                .noise {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url('noise.png');
+                    background-repeat: repeat;
+                    opacity: 0.1;
+                    pointer-events: none;
+                    z-index: 2;
+                }
+
                 .terminal-header {
                     position: absolute;
                     top: 0;
@@ -40,6 +53,8 @@
                 .terminal-content {
                     margin-top: 25px;
                     line-height: 1.4;
+                    position: relative;
+                    z-index: 3;
                 }
 
                 .command-line {
@@ -79,7 +94,6 @@
                 }
 
                 @keyframes blink {
-
                     0%,
                     100% {
                         opacity: 1;
@@ -140,6 +154,7 @@
             </style>
             <div class="container">
                 <div class="terminal">
+                    <div class="noise"></div>
                     <div class="terminal-header"></div>
                     <div class="terminal-content">
                         <div class="command-line">
